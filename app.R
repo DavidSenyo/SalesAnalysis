@@ -47,7 +47,11 @@ sim_data$price[sample(1:n, 20)] <- NA
 ### UI
 #####################
 ui <- page_navbar(
-  title = "SALES ANALYSIS",
+ # title = "SALES ANALYSIS",
+  title = tagList(
+                    h2("SALES ANALYSIS"),
+                    p("Author: David Senyo A.", style = "font-size: 16px; margin-top: -10px; color: gray;")
+                    ),
   theme = bs_theme(bootswatch = "flatly"),
   
   
